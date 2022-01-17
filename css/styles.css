@@ -247,3 +247,10 @@ h1 {
   font-weight: bold;
   font-size: 40px;
 }
+.text h5{
+  font-size: 20px;
+  padding: 20px;
+}
+#head{
+  padding-top: 30%;
+}
