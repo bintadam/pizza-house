@@ -61,4 +61,9 @@ $(document).ready(function(){
       $("div.choise").hide();
       alert("Please select pizza size and crust"); 
     }
+    else{
+      $("button.proceed").hide();
+      $("#information").hide();
+      $("div.choise").slideDown(1000);
+    }
 }
