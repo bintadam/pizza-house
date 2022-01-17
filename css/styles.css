@@ -218,3 +218,12 @@ td,th{
   .section {
     padding-top: 30px;
 }
+.flex-xs-column {
+  flex-direction: column;
+}
+#about-us .content {
+padding: 20px 30px 40px;
+}
+.about-pic img{
+width: 94%;
+}
