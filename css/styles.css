@@ -32,7 +32,7 @@ h5 {
   padding-top: 10%;
 }
 
-nav .navbar{
+.nav .navbar{
   width: 99%;
   padding-right: 0px;
 }
@@ -47,7 +47,7 @@ nav .navbar{
 }
 
 .landing{
-  background-image: url("/images/slider2.jpg");
+  background-image: url("../images/images\ \(2\).jpeg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,4 +66,15 @@ nav .navbar{
 }
 .button{
   border-radius: 10px;
+}
+.card-title{
+  text-align: center;
+  color: green;
+  font-weight: 800;
+}
+.controls-top h2{
+  color: rgb(5, 172, 5);
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-weight: bolder;
 }
