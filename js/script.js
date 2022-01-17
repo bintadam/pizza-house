@@ -74,7 +74,7 @@ $(document).ready(function(){
     $("#pizzaName").html($(".name option:selected").val());
     $("#pizzaSize").html( $("#size option:selected").val());
     $("#pizzaCrust").html($("#crust option:selected").val());
-    $("#pizzaTopping").html(ptopping.join(", "));
+    $("#pizzaTopping").html(pizzaTopping.join(", "));
     $("#totals").html(total);
 
     $("button.addPizza").click(function(){
@@ -120,7 +120,6 @@ $(document).ready(function(){
         default:
           console.log("No price"); 
       }
-    }
     let topping_value = pizzaTopping.length*50;
     console.log("toppins value" + topping_value);
     total = price + crust_price + topping_value;
@@ -146,7 +145,9 @@ $(document).ready(function(){
       event.preventDefault();
 
       $("#pizzatotal").hide();
+      $(".delivery").hide();
       $("button#final-order").hide();
+      let deliveryamount= checkoutTotal+200;
       console.log("Final Bill is:");
       let person = $("input#name").val();
       let phone = $("input#phone").val();
@@ -164,5 +165,6 @@ $(document).ready(function(){
         $("button#final-order").show();
       }
     });
-
-}
+      event.preventDefault();
+    });
+});
