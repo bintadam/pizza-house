@@ -35,4 +35,35 @@ h5 {
 nav .navbar{
   width: 99%;
   padding-right: 0px;
- }
+}
+.navbar-one{
+  margin-right: 30%;
+  font-weight:800;
+}
+.nav-item a{
+  /* padding-right: 50px; */
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.landing{
+  background-image: url("/images/slider2.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  padding-bottom: 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+.text a{
+  font-size: 20px;
+  font-weight: 700;
+}
+.text h5{
+  font-size: 25px;
+  padding: 30px;
+}
+.button{
+  border-radius: 10px;
+}
