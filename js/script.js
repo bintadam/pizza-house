@@ -51,4 +51,14 @@ $(document).ready(function(){
     default:
       console.log("No price"); 
   }
+  let topping_value = ptopping.length*50;
+    console.log("toppins value" + topping_value);
+
+    if((pizzaSize == "0") && (pizzaCrust == "0")){
+      console.log("nothing selected");
+      $("button.proceed").show();
+      $("#information").show();
+      $("div.choise").hide();
+      alert("Please select pizza size and crust"); 
+    }
 }
