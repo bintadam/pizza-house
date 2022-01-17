@@ -127,3 +127,9 @@ h5 {
     transform: translateY(-20px);
   }
 }
+.order h2{
+  text-align: center;
+}
+#menu{
+  padding-top: 30px;
+}
