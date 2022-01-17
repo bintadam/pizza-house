@@ -70,4 +70,19 @@ $(document).ready(function(){
     console.log(total);
     let checkoutTotal =0;
     checkoutTotal = checkoutTotal + total;
+
+    $("#pizzaName").html($(".name option:selected").val());
+    $("#pizzaSize").html( $("#size option:selected").val());
+    $("#pizzaCrust").html($("#crust option:selected").val());
+    $("#pizzaTopping").html(ptopping.join(", "));
+    $("#totals").html(total);
+
+    $("button.addPizza").click(function(){
+      let pizzaName = $(".name option:selected").val();
+      let pizzaSize = $("#size option:selected").val();
+      let pizzaCrust = $("#crust option:selected").val();
+      let pizzaTopping = [];
+      $.each($("input[name='toppings']:checked"), function(){            
+          pizzaTopping.push($(this).val());
+      });
 }
