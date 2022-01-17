@@ -85,4 +85,39 @@ $(document).ready(function(){
       $.each($("input[name='toppings']:checked"), function(){            
           pizzaTopping.push($(this).val());
       });
+      console.log(pizzaTopping.join(", "));
+      switch(pizzaSize){
+        case "0":
+          price =0;
+        break;
+        case "large":
+           price = 1400;
+           console.log(price);
+         break;
+         case "medium":
+           price = 1000;
+           console.log("The price is "+price);
+         break;
+         case "small":
+           price = 700;
+           console.log(price);
+         default:
+           console.log("error"); 
+       }
+       switch(pizzaCrust){
+        case "0":
+          crust_price = 0;
+        break;
+        case "Crispy":
+          crust_price = 300;
+        break;
+        case "Double-Cheese":
+          crust_price = 400;
+        break;
+        case "Gluten-free":
+          crust_price = 200;
+        break;
+        default:
+          console.log("No price"); 
+      }
 }
