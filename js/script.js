@@ -142,4 +142,14 @@ $(document).ready(function(){
       console.log("Your total bills is sh. "+checkoutTotal);
       $("#pizzatotal").append("Your bill is sh. "+checkoutTotal);
     });
+    $("button#final-order").click(function(event){
+      event.preventDefault();
+
+      $("#pizzatotal").hide();
+      $("button#final-order").hide();
+      console.log("Final Bill is:");
+      let person = $("input#name").val();
+      let phone = $("input#phone").val();
+      let location = $("input#location").val();
+
 }
