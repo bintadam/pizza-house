@@ -17,4 +17,22 @@ $(document).ready(function(){
       pizzaTopping.push($(this).val());
   });
   console.log(pizzaTopping.join(", "));
+  switch(pizzaSize){
+    case "0":
+      price =0;
+    break;
+    case "large":
+       price = 1200;
+       console.log(price);
+     break;
+     case "medium":
+       price = 850;
+       console.log("The price is "+price);
+     break;
+     case "small":
+       price = 600;
+       console.log(price);
+     default:
+       console.log("error"); 
+   }
 }
